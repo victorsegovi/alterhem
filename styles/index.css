@@ -1,0 +1,21 @@
+.hero{
+    background: #00002D;
+}
+
+.hero-text{
+    color: #FAFAFE;
+    font-family: Josefin Sans;
+}
+
+.btn-s-dark-bg{
+    border: 2px solid #FAFAFE;
+    color: #FAFAFE;
+}
+
+.primary-btn{
+    border-radius: 8px;
+    background: #101084;
+    padding: 24px 32px;
+    color: #FAFAFE;
+    text-decoration: none;
+}
