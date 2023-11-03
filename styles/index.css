@@ -22,11 +22,21 @@
 .btn-s-dark-bg{
     border: 2px solid #FAFAFE;
     color: #FAFAFE;
-    padding: 16px 32px;
+    padding: 24px 32px;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
     max-width: 480px;
+    transition: .35s;
+    background-image: linear-gradient(to left, #00002D, 50%, #FAFAFE 50%);
+    background-size: 0;
+    background-repeat: no-repeat;
+}
+
+.btn-s-dark-bg:hover{
+    color: #00002D;
+    font-weight: 600;
+    background-size: 200%;
 }
 
 .our-team{
@@ -50,10 +60,6 @@
     font-size: 24px;
 }
 
-.our-team-image{
-    overflow: hidden;
-}
-
 .our-team-image img{
     height: 100%;
 }
@@ -65,4 +71,86 @@
     color: #FAFAFE;
     text-decoration: none;
     text-align: center;
+    transition: .35s;
+}
+
+.primary-btn:hover, .p-btn-services:hover{
+    background-color: #1B1BDF;
+}
+
+.services{
+    display: flex;
+    min-height: 50vh;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.services-text{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Josefin Sans;
+    max-width: 40%;
+    gap: 24px;
+}
+
+.services-text h2{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 24px;
+    width: 100%;
+}
+
+.services-text ul{
+    width: 100%;
+}
+
+.p-btn-services{
+    border-radius: 8px;
+    background: #101084;
+    padding: 24px 32px;
+    color: #FAFAFE;
+    text-decoration: none;
+    text-align: center;
+    transition: .35s;
+}
+
+a{
+    max-height: 64px;
+}
+
+.btn-s-white-bg{
+    border: 2px solid #101084;
+    color: #101084;
+    padding: 24px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    max-width: 480px;
+    transition: .35s;
+    font-weight: 700;
+}
+
+.btn-s-white-bg:hover{
+    background-color: #1B1BDF;
+    border: 2px solid #1B1BDF;
+    color: #FAFAFE;
+
+}
+
+.services-image{
+    max-width: 600px;
+}
+
+.services-image img{
+    width: 100%;
+}
+
+.services-text a{
+    flex-grow: 1;
+}
+
+
+main p, main ul{
+    line-height: calc(100% + 6px);
+    font-size: calc(1rem + 2px);
 }
