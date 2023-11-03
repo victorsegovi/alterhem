@@ -1,0 +1,47 @@
+.description{
+    /* display: none; */
+    width: 100%;
+    margin-top: 40px;
+    color: #00002D;
+    font-family: Josefin Sans;
+    /* height: 0; */
+    /* overflow: hidden; */
+}
+
+.service{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 32px;
+    border: 1px solid #00002D;
+    justify-content: space-between;
+    color: #00002D;
+    align-items: center;
+    font-family: Josefin Sans;
+}
+
+
+main{
+    padding: 40px;
+}
+
+h1{
+    margin-bottom: 40px;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#services{
+    border: 1px solid #00002D;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.service:first-child{
+    border-radius: 8px 8px 0 0;
+}
+
+.service:last-child{
+    border-radius: 0 0 8px 8px;
+}
