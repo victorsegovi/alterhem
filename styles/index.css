@@ -1,15 +1,61 @@
 .hero{
     background: #00002D;
+    min-height: 30vw;
+    display: flex;
+    align-items: center;
 }
 
 .hero-text{
     color: #FAFAFE;
     font-family: Josefin Sans;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+}
+
+.hero-text h1{
+    text-transform: uppercase;
+    font-family: Montserrat;
 }
 
 .btn-s-dark-bg{
     border: 2px solid #FAFAFE;
     color: #FAFAFE;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    max-width: 480px;
+}
+
+.our-team{
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.our-team-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Josefin Sans;
+    max-width: 480px;
+}
+
+.our-team-text h2{
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.our-team-image{
+    overflow: hidden;
+}
+
+.our-team-image img{
+    height: 100%;
 }
 
 .primary-btn{
@@ -18,4 +64,5 @@
     padding: 24px 32px;
     color: #FAFAFE;
     text-decoration: none;
+    text-align: center;
 }
