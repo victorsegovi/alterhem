@@ -19,7 +19,7 @@
 }
 
 .title:hover{
-    background-color: #00002D;
+    background-color: #4545E8;
     color: #FAFAFE;
 }
 
@@ -40,9 +40,13 @@
 
 .dropdown .title, .dropdown .description{
     font-family: Josefin Sans;
-    color: #4545E8;
     transition: .5s;
     transform: scale(1);
+}
+
+.dropdown .title{
+    color: #FAFAFE;
+    background-color: #4545E8;
 }
 
 main{
