@@ -1,156 +1,128 @@
 .hero{
-    background: #00002D;
-    min-height: 30vw;
-    display: flex;
-    align-items: center;
+    height: 100vh;
+    background-color: #00002D;
+    padding: 64px 24px;
 }
 
 .hero-text{
-    color: #FAFAFE;
-    font-family: Josefin Sans;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding: 40px;
+    color: #FAFAFE;
+    font-family: Josefin Sans, sans-serif;
 }
 
 .hero-text h1{
-    text-transform: uppercase;
     font-family: Montserrat;
+    text-transform: uppercase;
 }
 
-.btn-s-dark-bg{
-    border: 2px solid #FAFAFE;
+.hero-text a{
     color: #FAFAFE;
-    padding: 24px 32px;
-    text-align: center;
     text-decoration: none;
-    border-radius: 8px;
-    max-width: 480px;
-    transition: .35s;
-    background-image: linear-gradient(to left, #00002D, 50%, #FAFAFE 50%);
-    background-size: 0;
-    background-repeat: no-repeat;
-}
-
-.btn-s-dark-bg:hover{
-    color: #00002D;
+    border: 2px solid #FAFAFE;
     font-weight: 600;
-    background-size: 200%;
+    padding: 24px 32px;
+    transition: 0.5s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .our-team{
     display: flex;
-    padding: 40px;
-    justify-content: space-between;
-    height: 50vh;
+    flex-wrap: wrap-reverse;
+    gap: 40px;
+    padding: 64px 24px;
 }
 
-.our-team-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-family: Josefin Sans;
-    max-width: 480px;
+.our-team img{
+    max-width: 100%;
 }
 
 .our-team-text h2{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     font-size: 24px;
 }
 
-.our-team-image img{
-    height: 100%;
-}
-
-.primary-btn{
-    border-radius: 8px;
-    background: #101084;
-    padding: 24px 32px;
-    color: #FAFAFE;
-    text-decoration: none;
-    text-align: center;
-    transition: .35s;
-}
-
-.primary-btn:hover, .p-btn-services:hover{
-    background-color: #1B1BDF;
-}
-
-.services{
+.our-team-text{
+    font-family: Josefin Sans, sans-serif;
     display: flex;
-    min-height: 50vh;
-    justify-content: space-between;
-    padding: 40px;
+    flex-direction: column;
+    gap: 24px;
+    color: #00002D;
+}
+
+.our-team-text ul{
+    margin: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.our-team-text a{
+    color: #FAFAFE;
+    background-color: #101084;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 24px 32px;
+    transition: 0.5s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.services-mobile{
+    background-image: url(../img/services.png);
+    color: #FAFAFE;
+    padding: 24px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .services-text{
+    font-family: Josefin Sans, sans-serif;
     display: flex;
-    flex-wrap: wrap;
-    font-family: Josefin Sans;
-    max-width: 40%;
+    flex-direction: column;
     gap: 24px;
+    padding: 24px;
 }
 
 .services-text h2{
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     text-transform: uppercase;
     font-size: 24px;
-    width: 100%;
-}
-
-.services-text ul{
-    width: 100%;
-}
-
-.p-btn-services{
-    border-radius: 8px;
-    background: #101084;
-    padding: 24px 32px;
-    color: #FAFAFE;
-    text-decoration: none;
-    text-align: center;
-    transition: .35s;
-}
-
-a{
-    max-height: 64px;
-}
-
-.btn-s-white-bg{
-    border: 2px solid #101084;
-    color: #101084;
-    padding: 24px 32px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 8px;
-    max-width: 480px;
-    transition: .35s;
-    font-weight: 700;
-}
-
-.btn-s-white-bg:hover{
-    background-color: #1B1BDF;
-    border: 2px solid #1B1BDF;
-    color: #FAFAFE;
-
-}
-
-.services-image{
-    max-width: 600px;
-}
-
-.services-image img{
-    width: 100%;
 }
 
 .services-text a{
-    flex-grow: 1;
+    text-decoration: none;
+    padding: 24px 32px;
+    text-align: center;
 }
 
+.services-text ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-main p, main ul{
-    line-height: calc(100% + 6px);
-    font-size: calc(1rem + 2px);
+.services-text .btn-s-white-bg{
+    color: #FAFAFE;
+    text-decoration: none;
+    border: 2px solid #FAFAFE;
+    font-weight: 600;
+    padding: 24px 32px;
+    transition: 0.5s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.services-text .p-btn-services{
+    color: #FAFAFE;
+    background-color: #101084;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 24px 32px;
+    transition: 0.5s ease-in-out;
+    border-radius: 8px;
+    text-align: center;
 }
