@@ -5,7 +5,6 @@
     font-family: Josefin Sans;
     overflow: hidden;
     transition: .5s;
-    height: 64px;
 }
 
 .title{
@@ -16,39 +15,45 @@
     color: #00002D;
     transition: .5s;
     cursor: pointer;
+    border-bottom: 1px solid #00002D;
 }
 
 .title:hover{
     background-color: #4545E8;
     color: #FAFAFE;
+    border-bottom: 1px solid #4545E8;
 }
 
 .description{
-    margin: 24px;
     color: #00002D;
     font-family: Josefin Sans;
     color: #00002D;
-    transform: scale(0);
+    font-size: 0;
+    transition: .5s;
 }
 
 .dropdown{
     transition: .5s;
     border-bottom: 1px solid #4545E8;
-    z-index: -1;
     height: fit-content;
 }
 
 .dropdown .title, .dropdown .description{
     font-family: Josefin Sans;
     transition: .5s;
-    transform: scale(1);
 }
 
 .dropdown .title{
     color: #FAFAFE;
     background-color: #4545E8;
+    border-bottom: unset;
 }
 
+
+.dropdown .description{
+    font-size: 16px;
+    margin: 24px;
+}
 main{
     padding: 40px;
 }

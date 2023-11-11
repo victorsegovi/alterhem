@@ -29,6 +29,7 @@ header{
     background-color: #FAFAFE;
     position: sticky;
     top: 0;
+    z-index: 100000000;
 }
 
 #header-desktop{
