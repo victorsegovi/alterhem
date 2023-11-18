@@ -131,8 +131,8 @@
     h1 > br{
         display: none;
     }
-
-    .hero, .our-team-text, .services-text{
+    
+    .hero-text, .our-team-text, .services-text{
         font-size: calc(.6vw + 100%);
     }
 
@@ -156,12 +156,18 @@
 }
 
 @media screen and (min-width: 700px) {
-    .hero-text{
-        max-width: 50%;
+
+    .hero{
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-text .br-mobile{
+        display: none;
     }
 
     .hero, .our-team, .services-mobile{
-        padding:  64px 24px;
+        padding:  64px;
     }
 }
 
@@ -196,5 +202,27 @@
 }
 
 @media screen and (min-width: 976px) {
-    
+    .hero{
+        padding: 0 80px;
+    }
+
+    .hero-text{
+        font-size: 1.5rem;
+    }
+
+    .hero-text p{
+        max-width: fit-content;
+    }
+
+    .hero-text a{
+        max-width: 561px;
+    }
+
+    .our-team{
+        padding: 64px 80px;
+    }
+
+    .our-team-image img{
+        width: 100%;
+    }
 }
