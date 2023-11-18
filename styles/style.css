@@ -132,7 +132,7 @@ footer ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 }
 
 footer div{
@@ -169,6 +169,7 @@ footer h3{
         padding: 48px;
         padding-bottom: 16px;
         gap: 48px;
+        align-items: flex-start;
     }
 }
 

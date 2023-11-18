@@ -23,7 +23,7 @@
     border: 2px solid #FAFAFE;
     font-weight: 600;
     padding: 24px 32px;
-    transition: 0.5s ease-in-out;
+    transition: 0.25s ease-in-out;
     border-radius: 8px;
     text-align: center;
 }
@@ -31,7 +31,7 @@
 .our-team{
     display: flex;
     flex-wrap: wrap-reverse;
-    gap: 40px;
+    gap: 64px;
     padding: 64px 24px;
 }
 
@@ -66,7 +66,7 @@
     text-decoration: none;
     font-weight: 600;
     padding: 24px 32px;
-    transition: 0.5s ease-in-out;
+    transition: .25s ease-in-out;
     border-radius: 8px;
     text-align: center;
 }
@@ -77,6 +77,10 @@
     padding: 24px;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.services-desktop{
+    display: none;
 }
 
 .services-text{
@@ -105,13 +109,13 @@
     gap: 8px;
 }
 
-.services-text .btn-s-white-bg{
+.services-text .btn-s-dark-bg{
     color: #FAFAFE;
     text-decoration: none;
     border: 2px solid #FAFAFE;
     font-weight: 600;
     padding: 24px 32px;
-    transition: 0.5s ease-in-out;
+    transition: .25s ease-in-out;
     border-radius: 8px;
     text-align: center;
 }
@@ -122,9 +126,25 @@
     text-decoration: none;
     font-weight: 600;
     padding: 24px 32px;
-    transition: 0.5s ease-in-out;
+    transition: .25s ease-in-out;
     border-radius: 8px;
     text-align: center;
+}
+
+.hero a, .services-text .btn-s-dark-bg{
+    background-image: linear-gradient(to right, #FAFAFE 100%, #00002D 100%);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    background-position-x: 200%;
+}
+
+.hero a:hover, .services-text .btn-s-dark-bg:hover{
+    background-position-x: 0;
+    color: #00002D;
+}
+
+.our-team-text a:hover, .services-text .p-btn-services:hover{
+    background-color: #1B1BDF;
 }
 
 @media screen and (min-width: 388px) {
@@ -220,9 +240,89 @@
 
     .our-team{
         padding: 64px 80px;
+        flex-wrap: nowrap;
     }
 
-    .our-team-image img{
-        width: 100%;
+    .our-team-text{
+        font-size: 1rem;
+        justify-content: space-between;
+        max-height: fit-content;
+    }
+
+    .our-team-image{
+        height: fit-content;
+        align-self: flex-end;
+        max-width: 500px;
+    }
+
+
+    .services-text h2{
+        font-size: 24px;
+    }
+
+    .services-text{
+        font-size: 1rem;
+    }
+
+
+    
+    .services-text a{
+        font-size: 20px;
+    }
+
+    .services-mobile{
+        display: none;
+    }
+
+    .services-desktop{
+        display: block;
+        padding: 64px 80px;
+        display: flex;
+        gap: 64px;
+    }
+
+    .services-image{
+        overflow: hidden;
+    }
+
+    .services-image img{
+        height: 100%;
+    }
+
+    .services-text .btn-s-white-bg{
+        border: 2px solid #101084;
+        color: #101084;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: .25s ease-in-out;
+    }
+
+    .services-text .btn-s-white-bg:hover{
+        background-color: #1B1BDF;
+        border: 2px solid #1B1BDF;
+        color: #FAFAFE;
+    }
+
+    .services-text{
+        padding: 0;
+        color: #00002D;
+    }
+
+    .services-text a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .our-team-text, .services-text{
+        width: 50%;
+    }
+
+    .hero, .our-team, .services-desktop{
+        padding: 80px 10vw;
+    }
+
+    .our-team, .services-desktop{
+        justify-content: space-between;
     }
 }
