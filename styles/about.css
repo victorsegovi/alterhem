@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, main h3{
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    color: #00002D;
+}
+
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+main p, main li{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    list-style: none;
+    color: #00002D;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    margin: 40px 24px 24px;
+}
+
+.about-section{
+    padding: 0 24px;
+}
+
+main li{
+    margin: 16px 0;
+}
+
+.our-team{
+    padding: 80px 24px;
+}
+
+.our-team > h2{
+    font-size: 16px;
+}
+
+.further-training{
+    background-color: #00002D;
+    color: #FAFAFE;
+    padding: 80px 24px;
+}
+
+.further-training h2, .further-training li{
+    color: #FAFAFE;
+}
+
+.fernando-desc{
+    text-align: center;
+    margin-top: 24px;
+}
+
+.experience h3{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    margin: 16px 0;
+    line-height: 20px;
+}
+
+.education{
+    padding:  80px 0;
+}
+
+@media screen and (min-width: 413px) {
+    main p, main h3, main li{
+        font-size: 16px;
+    }
+
+    main h2, .our-team > h2{
+        font-size: 24px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    .fernando-azuaje{
+        width: fit-content;
+    }
+
+    .professional-experience, .other-experience ul{
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .professional-experience h2{
+        width: 100%;
+    }
+
+    .experience, .other-experience li{
+        width: 100%;
+        padding: 40px;
+        box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    .experience h3{
+        margin-top: unset;
+    }
+
+    .education br{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .skill-set p, .further-training ul{
+        columns: 2;
+    }
+
+    h1{
+        margin-left: 80px;
+    }
+
+    .about-section{
+        padding: 40px 80px;
+    }
+
+    .further-training ul li{
+        margin: unset;
+        margin-bottom: 16px;
+    }
+
+    .experience h3{
+        font-size: 16px;
+    }
+
+    .experience br, .other-experience br{
+        display: none;
+    }
+
+    .education{
+        background-color: #00002D;
+    }
+
+    .education br{
+        display: inline;
+    }
+
+    .education ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-between;
+    }
+
+    .education h2, .education li{
+        color: #FAFAFE;
+    }
+
+    .education li{
+        width: calc(50% - 24px);
+    }
+
+    .education h2{
+        width: 100%;
+    }
+
+    .our-team{
+        padding: 0;
+    }
+
+    .our-team > h2{
+        margin: 80px 80px 0;
+    }
+
+    .our-team div{
+        padding: 80px;
+    }
+
+    .fernando-azuaje{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        background-color: #151519;
+        width: 100%;
+        margin: 80px 0;
+    }
+
+    .fernando-azuaje h2{
+        width: 100%;
+        color: #FAFAFE;
+    }
+
+    .fernando-azuaje img{
+        width: calc(50% - 24px);
+    }
+
+    .fernando-azuaje .fernando-desc{
+        width: calc(50% - 24px);
+        font-size: 16px;
+        color: #FAFAFE;
+        font-size: 24px;
+    }
+
+    .fernando-azuaje span{
+        color: #CDCDF9;
+        text-decoration: underline #CDCDF9;
+    }
+}
+
+@media screen and (min-width: 976px) {
+    .experience{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: calc(50% - 24px);
+    }
+
+    .fernando-azuaje .fernando-desc{
+        width: calc(50% - 24px);
+    }
+
+    .professional-experience{
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .education li{
+        width: calc(25% - 24px);
+    }
+
+    .skill-set p, .further-training ul{
+        columns: 1;
+    }
+
+    .skill-set p{
+        columns: 1;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    h1{
+        width: 100%;
+    }
+
+    .skill-set, .further-training{
+        width: calc(50% - 40px);
+    }
+
+    .skill-set br, .further-training br{
+        display: none;
+    }
+
+    .skill-set .line-break{
+        display: inline;
+    }
+
+    .skill-set br{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1220px) {
+    .other-experience li{
+        width: calc(25% - 16px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fernando-azuaje .fernando-desc{
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .experience br{
+        display: inline;
+    }
+}
