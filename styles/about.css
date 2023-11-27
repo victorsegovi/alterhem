@@ -197,6 +197,7 @@ main li{
     .fernando-azuaje h2{
         width: 100%;
         color: #FAFAFE;
+        font-size: 24px;
     }
 
     .fernando-azuaje img{
@@ -208,6 +209,8 @@ main li{
         font-size: 16px;
         color: #FAFAFE;
         font-size: 24px;
+        text-align: left;
+        padding-left: 48px;
     }
 
     .fernando-azuaje span{
@@ -280,6 +283,10 @@ main li{
     }
 
     .fernando-azuaje .fernando-desc{
+        font-size: 32px;
+    }
+
+    .fernando-azuaje h2{
         font-size: 32px;
     }
 }
