@@ -146,6 +146,7 @@ footer div{
 .get-social{
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .get-social h3{
@@ -204,6 +205,10 @@ footer h3{
 
     #header-desktop ul li a{
         transition: .5s;
+    }
+
+    #header-desktop a i{
+        font-size: 32px;
     }
 
     #header-desktop ul li{
