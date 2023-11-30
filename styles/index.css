@@ -399,7 +399,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    animation: move-left-first 5s infinite ease-in-out;
+    animation: move-left-first 7s infinite ease-in-out;
   }
 
   .hero-animation div:nth-child(2) {
@@ -413,7 +413,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    animation: move-left-second 5s infinite ease-in-out;
+    animation: move-left-second 7s infinite ease-in-out;
   }
 
   .hero-animation div:nth-child(3) {
@@ -427,7 +427,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    animation: move-left-third 5s infinite ease-in-out;
+    animation: move-left-third 7s infinite ease-in-out;
   }
 
   .hero-animation div:last-child {
@@ -441,7 +441,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    animation: move-left-last 5s infinite ease-in-out;
+    animation: move-left-last 7s infinite ease-in-out;
   }
 
   @keyframes move-left-first {
