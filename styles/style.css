@@ -162,6 +162,27 @@ footer h3{
     font-family: Montserrat;
 }
 
+.instagram-posts{
+    width: 100%;
+    min-height: 100vh;
+    padding: 24px;
+    display: flex;
+    overflow: hidden;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.instagram-posts a{
+    box-shadow: 0 0  5px rgba(0, 0, 0,.5);
+    height: fit-content;
+}
+
+.instagram-posts a img{
+    width: 400px;
+}
+
 @media screen and (min-width: 600px) {
     footer{
         flex-direction: row;
