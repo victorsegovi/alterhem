@@ -165,7 +165,7 @@ footer h3{
 .instagram-posts{
     width: 100%;
     min-height: 100vh;
-    padding: 24px;
+    padding: 80px;
     display: flex;
     overflow: hidden;
     gap: 40px;
@@ -177,10 +177,26 @@ footer h3{
 .instagram-posts a{
     box-shadow: 0 0  5px rgba(0, 0, 0,.5);
     height: fit-content;
+    width: 80vw;
+    max-width: 550px;
 }
 
 .instagram-posts a img{
-    width: 400px;
+    width: 100%;
+}
+
+.instagram-posts h2, .instagram-posts p{
+    color: #00002D;
+}
+
+.instagram-posts h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+}
+
+.instagram-posts p{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
 }
 
 @media screen and (min-width: 600px) {
