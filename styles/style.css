@@ -162,7 +162,7 @@ footer h3{
     font-family: Montserrat;
 }
 
-.instagram-posts{
+.instagram-posts, .banners{
     width: 100%;
     min-height: 100vh;
     padding: 80px;
@@ -174,7 +174,7 @@ footer h3{
     flex-wrap: wrap;
 }
 
-.instagram-posts a{
+.instagram-posts a, .banners img{
     box-shadow: 0 0  5px rgba(0, 0, 0,.5);
     height: fit-content;
     width: 80vw;
@@ -185,16 +185,16 @@ footer h3{
     width: 100%;
 }
 
-.instagram-posts h2, .instagram-posts p{
+.banners h2, .banners p{
     color: #00002D;
 }
 
-.instagram-posts h2{
+.banners h2{
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
 }
 
-.instagram-posts p{
+.banners p{
     font-family: "Josefin Sans", sans-serif;
     font-size: 16px;
 }
