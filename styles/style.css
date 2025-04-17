@@ -174,7 +174,7 @@ footer h3{
     flex-wrap: wrap;
 }
 
-.instagram-posts a, .banners img{
+.instagram-posts a{
     box-shadow: 0 0  5px rgba(0, 0, 0,.5);
     height: fit-content;
     width: 80vw;
@@ -185,18 +185,19 @@ footer h3{
     width: 100%;
 }
 
-.banners h2, .banners p{
-    color: #00002D;
+
+.banners{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 80px;
 }
 
-.banners h2{
-    font-family: "Montserrat", sans-serif;
-    font-size: 24px;
-}
-
-.banners p{
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 16px;
+.banners img{
+    width: 100%;
+    max-width: 550px;
+    max-height: 550px;
 }
 
 @media screen and (min-width: 600px) {
