@@ -175,7 +175,6 @@ footer h3{
 }
 
 .instagram-posts a{
-    box-shadow: 0 0  5px rgba(0, 0, 0,.5);
     height: fit-content;
     width: 80vw;
     max-width: 550px;
